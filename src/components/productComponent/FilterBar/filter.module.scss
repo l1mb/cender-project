@@ -1,0 +1,19 @@
+@import "../../homeComponent/shared.module.scss";
+
+.filterContainer {
+  padding: 20px;
+
+  border-radius: 15px;
+  box-shadow: 0 0 3px white;
+
+  background: $half-transparent-black;
+
+  .labels {
+    margin: 20px 0px 6px 0px;
+  }
+
+  .firstLabel {
+    text-align: center;
+    margin: 0px 0px 6px 0px;
+  }
+}

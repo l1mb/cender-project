@@ -1,0 +1,18 @@
+.aboutWrapper {
+  background: url("../../assets/images/about/about.jpg");
+  height: 90vh;
+  width: 100%;
+
+  padding-bottom: 90px;
+
+  background-position: center center;
+  background-size: cover;
+
+  h2 {
+    margin: 0;
+    background: transparent;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+}

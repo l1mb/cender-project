@@ -1,0 +1,193 @@
+@import "../../components/homeComponent/shared.module.scss";
+
+.profileWrapper {
+  background: url("../../assets/images/profile/profile.jpg");
+  height: 90vh;
+  width: 100vw;
+
+  padding-bottom: 90px;
+
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    background: transparent;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .container {
+    background: $half-transparent-black;
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    margin-top: 2%;
+    padding: 10px;
+
+    .label {
+      flex-grow: 0;
+    }
+
+    .table {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      th {
+        color: white;
+      }
+
+      td {
+        width: 120px;
+        text-align: center;
+        color: white;
+      }
+
+      .foot {
+        tr {
+          border-spacing: 40px;
+          margin-top: 40px;
+        }
+      }
+
+      span {
+        color: white;
+        margin: 20px 0;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    padding: 20px 0;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+
+  .sorryImage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      padding: 20px;
+      width: 168px;
+    }
+
+    a {
+      color: red;
+      text-decoration: none;
+    }
+  }
+
+  .column {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 200px;
+    width: 30%;
+
+    .imageContainer {
+      display: flex;
+      justify-content: center;
+      height: 446px;
+      margin-bottom: 60px;
+
+      .initials {
+        position: relative;
+        top: 80px;
+        font-size: 70px;
+        line-height: 50px;
+        color: black;
+        font-family: "Courier New", monospace;
+        font-weight: bold;
+      }
+
+      .avatarCircle {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        text-align: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+      }
+    }
+
+    .file {
+      margin: auto;
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+      color: black;
+      background: red;
+      border: red 1px solid;
+      border-radius: 10px;
+      box-shadow: 0 0 10px red;
+
+      transition: all 0.1s linear;
+      transition-property: color, background;
+
+      font-size: 16px;
+    }
+
+    .file:active {
+      color: white;
+      background-color: rgba($color: red, $alpha: 0.8);
+    }
+
+    .sideButtons {
+      display: flex;
+      justify-content: center;
+      width: 180px;
+      margin: 10px auto;
+    }
+
+    .photoButton {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      input {
+        display: none;
+      }
+
+      label {
+        margin: auto;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        color: black;
+        background: red;
+        border: red 1px solid;
+        border-radius: 10px;
+        box-shadow: 0 0 10px red;
+
+        transition: all 0.1s linear;
+        transition-property: color, background;
+
+        font-size: 16px;
+      }
+
+      label:active {
+        color: white;
+        background-color: rgba($color: red, $alpha: 0.8);
+      }
+    }
+  }
+
+  .error {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    margin: 10px auto;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}

@@ -43,10 +43,14 @@ module.exports = {
     "react/prefer-stateless-function": 0,
     "react/react-in-jsx-scope": 0,
     "react/jsx-props-no-spreading": 0,
+
     "react/jsx-curly-newline": 0, // it conflicts with prettier
     "react/jsx-wrap-multilines": ["error", { arrow: true, return: true, declaration: true }],
     // watch bug: https://github.com/airbnb/javascript/pull/2501
-    "react/function-component-definition": [2, { namedComponents: "function-declaration" }],
+    "react/function-component-definition": [
+      2,
+      { namedComponents: "function-declaration", unnamedComponents: "arrow-function" },
+    ],
     "spaced-comment": ["error", "always"],
     "unused-imports/no-unused-imports": "error",
     "no-underscore-dangle": "off",
